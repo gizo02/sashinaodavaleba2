@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3AB7A8"
+    android:gravity="center"
+    android:padding="20dp"
+    tools:context=".second">
+
+    <EditText
+        android:id="@+id/user_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="Username"
+        android:inputType="text"
+        android:textColor="#000000"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#F30658" />
+
+    <EditText
+        android:id="@+id/email_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_et"
+        android:layout_marginTop="8dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#F30658" />
+
+    <EditText
+        android:id="@+id/pass_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email_et"
+        android:layout_marginTop="8dp"
+        android:hint="Password"
+        android:inputType="numberPassword"
+        android:textColorHint="#F30658" />
+
+    <Button
+        android:id="@+id/registration_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pass_et"
+        android:layout_marginTop="20dp"
+        android:text="@string/second"
+        android:textAllCaps="false"
+        app:backgroundTint="#F30658" />
+
+    <Button
+        android:id="@+id/goback_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registration_btn"
+        android:layout_marginTop="20dp"
+        android:text="Go Back"
+        android:textAllCaps="true"
+        app:backgroundTint="#F30658" />
+
+</RelativeLayout>

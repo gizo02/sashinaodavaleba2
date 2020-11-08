@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3AB7A8"
+    android:gravity="center"
+    android:padding="20dp"
+    tools:context=".third">
+
+    <EditText
+        android:id="@+id/user_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:textColor="#000000"
+        android:textColorHint="#F30658" />
+
+
+    <EditText
+        android:id="@+id/pass_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_et"
+        android:layout_marginTop="8dp"
+        android:hint="Password"
+        android:inputType="numberPassword"
+        android:textColorHint="#F30658" />
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pass_et"
+        android:layout_marginTop="20dp"
+        android:text="LogIn"
+        android:textAllCaps="false"
+        app:backgroundTint="#F30658" />
+
+    <Button
+        android:id="@+id/goback_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_btn"
+        android:layout_marginTop="20dp"
+        android:text="Go Back"
+        android:textAllCaps="false"
+        app:backgroundTint="#F30658" />
+
+</RelativeLayout>
